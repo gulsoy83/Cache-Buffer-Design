@@ -32,6 +32,11 @@ Sample:
 (In order not to take up space, the entries are shown side by side and not as characters.)
 T = 5, L = 4
 REQUESTS: A B B A C C A A A A C D E F D G D B
+
+
+
+
+
 Screen outputs:
 A, 1 (A arrived, new node head node is assigned)
 B, 1  A, 1 (B arrived, new node head node is assigned)
@@ -51,6 +56,9 @@ F, 1  E, 1  D, 2  A, 6 (D arrived, counter increased)
 G, 1  F, 1  E, 1  D, 1 (G came, new node head node assigned [L = 4] last (5th) node deleted)
 G, 1  F, 1  E, 1  D, 2 (D arrived, counter increased)
 B, 1  G, 1  F, 1  E, 1 (B arrived, new node head node assigned [L = 4] last (5th) node deleted)
+
+
+
 
 The expression given in the entry as a string step by step or at a time from the text file
 You receive. At the end of each request, cache buffer's existing linked list structure, with the contents of the nodes
