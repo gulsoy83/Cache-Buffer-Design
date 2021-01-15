@@ -1,5 +1,5 @@
 # Cache-Buffer-Design
-A cache buffer program written by C
+A cache buffer program.
 
 It consists of 4 main parts:
 1. Implementation of double linked list nodes and data structure:
