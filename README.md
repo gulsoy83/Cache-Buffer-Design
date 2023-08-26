@@ -52,4 +52,10 @@ Screen outputs:
 * G, 1 <-> F, 1 <-> E, 1 <-> D, 2 (D arrived, counter increased)
 * B, 1 <-> G, 1 <-> F, 1 <-> E, 1 (B arrived, new node assigned as head node, [L = 4] last (5th) node deleted)
 
+***
+![image1](https://github.com/gulsoy83/Cache-Buffer-Design/assets/46426033/555f6131-467d-4aa4-929a-58414e717b9e)
+
+![image2](https://github.com/gulsoy83/Cache-Buffer-Design/assets/46426033/89353c09-444e-4cd2-9d49-68081333204d)
+
+
 
