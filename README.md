@@ -3,22 +3,25 @@ A cache buffer program.
 
 It consists of 4 main parts:
 
-1. Implementation of double linked list nodes and data structure:
+I. Implementation of double linked list nodes and data structure:
 In each node; address of the requested page, total number of requests (counter), previous and next pointers of nodes must be kept. Nodes navigation, counter query, node operations such as adding and deleting should be done.
 
 
-2. Solution of the given operation using the double linked list:
-   a. Reading the input:
-    i. Read the requested pages as strings (Ex: ABC, ABE, BCD,…). Pages should be readable from a text document too (line by line).
-   b. Processing input:
-    i. If the entered page (or 1 line read from the file) is not already in the cache buffer, it will be created as a new node in the cache, it's counter is set to 1, and the start node (head node) will be set as that node.
-    ii. If the entered page is present in the cache buffer, the counter of the relevant node is increased by 1. If the counter exceeds a specified threshold value (Ex: T = 10), this node will be assigned as head node in cache buffer. (Previous and next node's markers are also arranged.)
-  c. Maintanence of the cache buffer:
-    I. Cache buffer has a certain capacity (Ex: L = 20). If this capacity is exceeded, the last element (node) of the cache buffer will be deleted (should be controlled in step 2.b).
+II. Solution of the given operation using the double linked list:
+* a. Reading the input:
+    1. Read the requested pages as strings (Ex: ABC, ABE, BCD,…). Pages should be readable from a text document too (line by line).
+* b. Processing input:
+  1. If the entered page (or 1 line read from the file) is not already in the cache buffer, it will be created as a new node in the cache, it's counter is set to 1, and the start node (head node) will be set as that node.
+  2. If the entered page is present in the cache buffer, the counter of the relevant node is increased by 1. If the counter exceeds a specified threshold value (Ex: T = 10), this node will be assigned as head node in cache buffer. (Previous and next node's markers are also arranged.)
 
-4. Service of the Cache buffer: Whenever a new request arrives, step 2.b is executed. and cache the current version of the buffer is in the form of a linked list, with the contents of the nodes (address and counter) on the screen is shown.
+  * c. Maintanence of the cache buffer:
+    1. Cache buffer has a certain capacity (Ex: L = 20). If this capacity is exceeded, the last element (node) of the cache buffer will be deleted (should be controlled in step 2.b).
 
-5. Cleaning the Cache Buffer: To clear the cache (after listing items to the user), user should be asked first. If cleaning is approved, all elements in the list will be deleted.
+
+III. Service of the Cache buffer: Whenever a new request arrives, step 2.b is executed. and cache the current version of the buffer is in the form of a linked list, with the contents of the nodes (address and counter) on the screen is shown.
+
+
+IV. Cleaning the Cache Buffer: To clear the cache (after listing items to the user), user should be asked first. If cleaning is approved, all elements in the list will be deleted.
 
 ***
 
