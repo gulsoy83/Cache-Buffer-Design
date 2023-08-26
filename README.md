@@ -13,7 +13,6 @@ II. Solution of the given operation using the double linked list:
 * b. Processing input:
   1. If the entered page (or 1 line read from the file) is not already in the cache buffer, it will be created as a new node in the cache, it's counter is set to 1, and the start node (head node) will be set as that node.
   2. If the entered page is present in the cache buffer, the counter of the relevant node is increased by 1. If the counter exceeds a specified threshold value (Ex: T = 10), this node will be assigned as head node in cache buffer. (Previous and next node's markers are also arranged.)
-
 * c. Maintanence of the cache buffer:
     1. Cache buffer has a certain capacity (Ex: L = 20). If this capacity is exceeded, the last element (node) of the cache buffer will be deleted (should be controlled in step 2.b).
 
